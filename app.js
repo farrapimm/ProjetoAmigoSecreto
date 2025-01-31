@@ -1,9 +1,9 @@
-// Seleciona os elementos da página
+// Selecionar elementos da página
 const addAmigo = document.getElementById('amigo'); // Campo de texto para adicionar nomes
 const listaAmigos = document.getElementById('listaAmigos'); // Lista de nomes adicionados
 const resultado = document.getElementById('resultado'); // Elemento para exibir o resultado do sorteio
 
-// Array para armazenar os nomes
+// Array para armazenar os nomes digitados
 let nomes = [];
 
 // Função para adicionar um nome à lista
@@ -16,7 +16,7 @@ function adicionarAmigo() {
         return;
     }
 
-    // Valida se o nome já foi adicionado
+    // Validar se o nome já foi adicionado
     if (nomes.includes(nome)) {
         alert('Este nome já foi adicionado.');
         return;
